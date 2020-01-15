@@ -15,6 +15,6 @@ if __name__ == "__main__":
         'HoldTheDoor': '0'
     }
     response = requests.get(url)
-    for i in range(1022):
+    for i in range(1024):
         cookies['holdthedoor'] = response.cookies['HoldTheDoor']
         requests.post(url, data=data, headers=header, cookies=cookies)
